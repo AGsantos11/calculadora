@@ -15,18 +15,19 @@ public class Calc {
 		String opr = in.next();
 		System.out.println("Digite o segundo valor :");
 		numero2 = in.nextFloat();
+		//correção do tiago
 		if (opr.equals("+")) {
 			float resultado = numero1+numero2;
 			System.out.println("A soma é " +resultado);
 		}else if (opr.equals("*")) {
 			float resultado = numero1*numero2;
-			System.out.println("A multiplicação é " +resultado);
+			System.out.println("A multiplicação é " + resultado);
 		}else if(opr.equals("-")) {
 			float resultado = numero1-numero2;
-			System.out.println("A subtração é " +resultado);
+			System.out.println("A subtração é " + resultado);
 		}else if(opr.equals("/")) {
 			float resultado = numero1/numero2;
-			System.out.println("A divisão é " +resultado);
+			System.out.println("A divisão é " + resultado);
 		
 
 	}
