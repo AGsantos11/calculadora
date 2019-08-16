@@ -11,23 +11,23 @@ public class Calc {
 		System.out.println("-----------------------------------------------");
 		System.out.println("Digite o primeiro valor: ");
 		numero1 = in.nextFloat();
-		System.out.println("Qual a operaÁ„o desejada? +,-,/,*");
+		System.out.println("Qual a opera√ß√£o desejada? +,-,/,*");
 		String opr = in.next();
 		System.out.println("Digite o segundo valor :");
 		numero2 = in.nextFloat();
-		//correÁ„o do tiago
+		//corre√ß√£o rapida
 		if (opr.equals("+")) {
 			float resultado = numero1+numero2;
-			System.out.println("A soma È " +resultado);
+			System.out.println("A soma √© " +resultado);
 		}else if (opr.equals("*")) {
 			float resultado = numero1*numero2;
-			System.out.println("A multiplicaÁ„o È " + resultado);
+			System.out.println("A multiplica√ß√£o √© " + resultado);
 		}else if(opr.equals("-")) {
 			float resultado = numero1-numero2;
-			System.out.println("A subtraÁ„o È " + resultado);
+			System.out.println("A subtra√ß√£o √© " + resultado);
 		}else if(opr.equals("/")) {
 			float resultado = numero1/numero2;
-			System.out.println("A divis„o È " + resultado);
+			System.out.println("A divis√£o √© " + resultado);
 		
 
 	}
