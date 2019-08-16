@@ -1,36 +1,49 @@
 package Calculadora;
+
 import java.util.Scanner;
 
 public class Calc {
 	private static Scanner in;
 
-	public static void main(String[] args) {
-		in = new Scanner(System.in);
-		float numero1, numero2;
-		System.out.println("	Bem vindo a calculadora 1.0");
-		System.out.println("-----------------------------------------------");
-		System.out.println("Digite o primeiro valor: ");
-		numero1 = in.nextFloat();
-		System.out.println("Qual a operação desejada? +,-,/,*");
-		String opr = in.next();
-		System.out.println("Digite o segundo valor :");
-		numero2 = in.nextFloat();
-		//correção rapida
-		if (opr.equals("+")) {
-			float resultado = numero1+numero2;
-			System.out.println("A soma é " +resultado);
-		}else if (opr.equals("*")) {
-			float resultado = numero1*numero2;
-			System.out.println("A multiplicação é " + resultado);
-		}else if(opr.equals("-")) {
-			float resultado = numero1-numero2;
-			System.out.println("A subtração é " + resultado);
-		}else if(opr.equals("/")) {
-			float resultado = numero1/numero2;
-			System.out.println("A divisão é " + resultado);
+	public static float calcula(String opr, float numero1, float numero2) {
+		 float resultado = 0;
 		
+		if (opr.equals("+")) {
+			resultado = soma(numero1,numero2);
+		} else if (opr.equals("*")) {
+			resultado = multiplica(numero1, numero2);
+		} else if (opr.equals("-")) {
+			resultado = subtrai(numero1, numero2);
+		} else if (opr.equals("/")) {
+			resultado = diivide(numero1, numero2);
+		}
+		
+		return resultado;
 
 	}
 	
-}
+	private static float subtrai(float numero1,float numero2) {
+		float resultado = numero1 - numero2;
+		System.out.println("A subtra��o " + resultado);
+		return resultado;
+	}
+	
+	private static float soma(float numero1,float numero2) {
+		float resultado = numero1 + numero2;
+		System.out.println("A soma " + resultado);
+		return resultado;
+	}
+	
+	private static float diivide(float numero1,float numero2) {
+		float resultado = numero1 * numero2;
+		System.out.println("A divis�o " + resultado);
+		return resultado;
+	}
+	
+	private static float multiplica(float numero1,float numero2) {
+		float resultado = numero1 * numero2;
+		System.out.println("A multiplica��o " + resultado);
+		return resultado;
+	}
+
 }
